@@ -1,0 +1,161 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #13151a;
+  font-size: 15px; }
+
+.invisible {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  position: absolute; }
+  .invisible img,
+  .invisible svg {
+    margin: 0 !important;
+    border: 0 !important;
+    padding: 0 !important;
+    width: 0 !important;
+    height: 0 !important; }
+
+.ellipsis::after {
+  content: "…"; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch; }
+
+.column {
+  height: 100vh;
+  margin-top: 3px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3px; }
+
+.sidebar {
+  width: 280px;
+  padding: 0;
+  margin: 3px;
+  color: #ffffff;
+  background-color: #353a4b; }
+  .sidebar a {
+    color: #d9e1e8;
+    text-decoration: none; }
+    .sidebar a:hover {
+      text-decoration: underline; }
+  .sidebar .box {
+    padding: 10px; }
+
+.logobox h1 {
+  margin: 0;
+  padding: 0; }
+
+.search-box .title {
+  padding-left: 10px; }
+
+.search-box .form {
+  display: flex;
+  width: 100%; }
+
+.search-box input {
+  box-sizing: border-box;
+  height: 30px;
+  flex-grow: 1; }
+
+.search-box button {
+  flex-basis: 10px; }
+
+.column-header {
+  background-color: #353a4b;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 12px 0px 12px 20px;
+  font-size: 16px;
+  color: #ffffff;
+  width: 500px; }
+  .column-header .icon {
+    margin-right: 10px; }
+  .column-header .wrapper {
+    display: flex;
+    vertical-align: middle; }
+  .column-header .column-title {
+    display: inline-flex;
+    flex-grow: 1; }
+  .column-header .right-menu {
+    display: inline-flex;
+    text-align: right;
+    flex-basis: 10px;
+    cursor: pointer; }
+
+.scrollable {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow-y: scroll; }
+
+.timeline {
+  width: 500px;
+  color: #ffffff;
+  background-color: #1E212A; }
+
+.status {
+  position: relative;
+  background-color: #282c37;
+  padding: 5px;
+  border-bottom: 1px solid #353a4b; }
+  .status .avatar-wrapper {
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 48px;
+    left: 0px;
+    position: absolute;
+    top: 10px;
+    width: 48px; }
+    .status .avatar-wrapper img {
+      border-radius: 4px;
+      background: transparent no-repeat;
+      background-position: 50%;
+      background-clip: padding-box;
+      width: 48px;
+      height: 48px;
+      background-size: 48px 48px; }
+  .status .timestamp {
+    float: right; }
+  .status .name .acct {
+    margin-left: 5px;
+    color: #4d5666; }
+  .status .content {
+    margin-left: 70px; }
+    .status .content a {
+      color: #d9e1e8;
+      text-decoration: none; }
+      .status .content a:hover {
+        text-decoration: underline; }
+  .status .attachments {
+    margin: 0;
+    padding: 0; }
+    .status .attachments img {
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+    .status .attachments a {
+      margin: 0;
+      padding: 0; }
+
+.emojione {
+  font-size: inherit;
+  vertical-align: middle;
+  object-fit: contain;
+  margin: -.2ex .15em .2ex;
+  width: 16px;
+  height: 16px; }
+  .emojione img {
+    width: auto; }

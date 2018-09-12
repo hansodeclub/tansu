@@ -1,0 +1,14 @@
+{
+    "name": "tansu",
+    "version": "0.1.0",
+    "author": "hansode.club",
+    "license": "AGPL3",
+    "private": true,
+    "scripts": {
+        "deploy": "goapp deploy backend",
+        "dev": "dev_appserver.py backend",
+        "postinstall": "git submodule update --init --recursive && go get -v ./...",
+        "test": "goapp test -v ./backend",
+        "client": "cd client && yarn start"
+    }
+}
